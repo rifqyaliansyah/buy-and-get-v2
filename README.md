@@ -2,13 +2,13 @@
 
 Backend API untuk Payment Link Generator menggunakan Express.js, PostgreSQL, dan Midtrans.
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js (v14 atau lebih tinggi)
 - PostgreSQL (v12 atau lebih tinggi)
 - Akun Midtrans (Sandbox untuk testing)
 
-## 🚀 Setup
+## Setup
 
 ### 1. Install Dependencies
 
@@ -74,7 +74,7 @@ Di Midtrans Dashboard:
 2. Payment Notification URL: `https://your-domain.com/api/webhook`
 3. Finish/Unfinish/Error Redirect URL: `https://your-frontend.com/success.html?order_id={order_id}`
 
-## 🏃 Running
+## Running
 
 ### Development Mode (dengan auto-reload)
 
@@ -176,7 +176,7 @@ Response:
 
 Endpoint ini dipanggil otomatis oleh Midtrans setelah pembayaran.
 
-## 🧪 Testing
+## Testing
 
 ### Test Create Payment Link
 
@@ -195,7 +195,7 @@ curl -X POST http://localhost:5000/api/create-link \
 curl http://localhost:5000/api/payment/AbC91x
 ```
 
-## 📁 Struktur Folder
+## Struktur Folder
 
 ```
 backend/
@@ -216,7 +216,7 @@ backend/
 └── README.md
 ```
 
-## 🔒 Security Notes
+## Security Notes
 
 - Jangan commit file `.env` ke repository
 - Gunakan HTTPS untuk production
@@ -224,7 +224,7 @@ backend/
 - Gunakan rate limiting untuk production
 - Verifikasi signature dari Midtrans webhook
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Database Connection Error
 
@@ -243,6 +243,6 @@ backend/
 - Untuk local development, gunakan ngrok untuk expose localhost
 - Set Payment Notification URL di Midtrans Dashboard
 
-## 📝 License
+## License
 
 MIT
